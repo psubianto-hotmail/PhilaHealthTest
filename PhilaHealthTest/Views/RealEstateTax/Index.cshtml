@@ -1,0 +1,26 @@
+﻿@using PhilaHealthTest.Models
+@model Brt
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Search Property</h2>
+
+<form method="post" action="">
+    <fieldset>
+        Enter a BRT # (9-digits, no dashes) : <br />
+        <div class="label">
+            @Html.LabelFor(m => m.BRTNo)
+        </div>
+
+        <div class="input-sm">
+           @Html.TextBoxFor(m => m.BRTNo)
+        </div>
+
+        <br />
+        <p>
+            <input type="submit" value="Search" />
+        </p>
+    </fieldset>
+</form>
+
