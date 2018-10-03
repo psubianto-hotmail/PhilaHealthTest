@@ -25,7 +25,7 @@ namespace PhilaHealthTest.Controllers
 		[HttpPost]
 		public IActionResult Index(Brt brt)
 		{
-
+			var jsonResult = "https://philahealthtax.azurewebsites.net/api/PropertyTax/" + brt;
 
 			return RedirectToAction("Result");
 		}
